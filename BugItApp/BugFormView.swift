@@ -11,7 +11,10 @@ struct BugFormView: View {
     @State private var bugTitle: String = ""
     @State private var bugDescription: String = ""
     @State private var selectedImage: Image? = nil
-    @State private var submitButtonEnabled: Bool = false
+    private var submitButtonEnabled: Bool {
+        !bugTitle.isEmpty && selectedImage != nil
+    }
+    @State private var isImagePickerPresented: Bool = false
 
     var body: some View {
         ScrollView {
@@ -36,7 +39,7 @@ struct BugFormView: View {
                             .scaledToFit()
                             .frame(height: 200)
                             .cornerRadius(10)
-
+                        
                     } else {
                         Rectangle()
                             .fill(Color.gray.opacity(0.2))
@@ -46,7 +49,7 @@ struct BugFormView: View {
                                     .foregroundColor(.gray)
                             )
                             .cornerRadius(10)
-
+                        
                     }
                     Spacer()
                 }
@@ -54,7 +57,7 @@ struct BugFormView: View {
                 .padding(.vertical)
                 
                 Button {
-                    //TODO: add image picker
+                    isImagePickerPresented = true
                 } label: {
                     Text("Add Image")
                         .foregroundColor(.white)
@@ -64,7 +67,11 @@ struct BugFormView: View {
                         .cornerRadius(10)
                 }
                 .padding(.top, 60)
-
+                .sheet(isPresented: $isImagePickerPresented, onDismiss: nil) {
+                    ImagePicker(image: $selectedImage)
+                }
+                
+                
                 Button {
                     // TODO: submit bug, if succeeded, navigate back
                 } label: {

@@ -20,6 +20,7 @@ struct ContentView: View {
                 .buttonStyle(.bordered)
             }
         }
+        .tint(.black)
     }
 }
 

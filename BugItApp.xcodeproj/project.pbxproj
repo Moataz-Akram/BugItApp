@@ -12,6 +12,7 @@
 		078777CB2C9477D900151D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 078777CA2C9477D900151D29 /* Assets.xcassets */; };
 		078777CE2C9477D900151D29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 078777CD2C9477D900151D29 /* Preview Assets.xcassets */; };
 		0787780B2C94ABD100151D29 /* BugFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0787780A2C94ABD100151D29 /* BugFormView.swift */; };
+		0787780F2C94BD1F00151D29 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0787780E2C94BD1F00151D29 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		078777CA2C9477D900151D29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		078777CD2C9477D900151D29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0787780A2C94ABD100151D29 /* BugFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugFormView.swift; sourceTree = "<group>"; };
+		0787780E2C94BD1F00151D29 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				078777C62C9477D700151D29 /* BugItApp.swift */,
 				078777C82C9477D700151D29 /* ContentView.swift */,
 				0787780A2C94ABD100151D29 /* BugFormView.swift */,
+				0787780E2C94BD1F00151D29 /* ImagePicker.swift */,
 				078777CA2C9477D900151D29 /* Assets.xcassets */,
 				078777CC2C9477D900151D29 /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				078777C92C9477D700151D29 /* ContentView.swift in Sources */,
+				0787780F2C94BD1F00151D29 /* ImagePicker.swift in Sources */,
 				078777C72C9477D700151D29 /* BugItApp.swift in Sources */,
 				0787780B2C94ABD100151D29 /* BugFormView.swift in Sources */,
 			);
