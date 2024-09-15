@@ -37,14 +37,13 @@ struct BugFormView: View {
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
                     
-                    HStack {
-                        Spacer()
                         if let image = selectedImage {
                             image
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: 200)
                                 .cornerRadius(10)
+                                .frame(maxWidth: .infinity)
                         } else {
                             Rectangle()
                                 .fill(Color.gray.opacity(0.2))
@@ -54,12 +53,7 @@ struct BugFormView: View {
                                         .foregroundColor(.gray)
                                 )
                                 .cornerRadius(10)
-                            
                         }
-                        Spacer()
-                    }
-                    .cornerRadius(10)
-                    .padding(.vertical)
                     
                     Button {
                         isImagePickerPresented = true
@@ -115,7 +109,9 @@ struct BugFormView: View {
                     ProgressView("Submitting...")
                         .padding(.all, 20)
                         .progressViewStyle(CircularProgressViewStyle())
-                        .background(Color.gray.opacity(0.6))
+                        .tint(.white)
+                        .foregroundStyle(.white)
+                        .background(Color.gray)
                         .cornerRadius(10)
                     Spacer()
                 }
@@ -125,6 +121,7 @@ struct BugFormView: View {
         .scrollIndicators(.hidden)
         .padding(.horizontal)
         .disabled(isLoading)
+        .dismissKeyboardOnTap()
     }
     
 }
