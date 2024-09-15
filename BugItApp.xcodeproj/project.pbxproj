@@ -14,7 +14,6 @@
 		078777CE2C9477D900151D29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 078777CD2C9477D900151D29 /* Preview Assets.xcassets */; };
 		0787780B2C94ABD100151D29 /* BugFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0787780A2C94ABD100151D29 /* BugFormView.swift */; };
 		0787780F2C94BD1F00151D29 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0787780E2C94BD1F00151D29 /* ImagePicker.swift */; };
-		07FBB8CF2C958EEF004C0CC7 /* BugItPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 07FBB8CE2C958EEF004C0CC7 /* BugItPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +25,6 @@
 		078777CD2C9477D900151D29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0787780A2C94ABD100151D29 /* BugFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugFormView.swift; sourceTree = "<group>"; };
 		0787780E2C94BD1F00151D29 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		07FBB8CC2C958EE8004C0CC7 /* BugItPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BugItPackage; path = ../BugItPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +32,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07FBB8CF2C958EEF004C0CC7 /* BugItPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,7 +41,6 @@
 		078777BA2C9477D700151D29 = {
 			isa = PBXGroup;
 			children = (
-				07FBB8CC2C958EE8004C0CC7 /* BugItPackage */,
 				078777C52C9477D700151D29 /* BugItApp */,
 				078777C42C9477D700151D29 /* Products */,
 				07FBB8CD2C958EEF004C0CC7 /* Frameworks */,
@@ -105,7 +101,6 @@
 			);
 			name = BugItApp;
 			packageProductDependencies = (
-				07FBB8CE2C958EEF004C0CC7 /* BugItPackage */,
 			);
 			productName = BugItApp;
 			productReference = 078777C32C9477D700151D29 /* BugItApp.app */;
@@ -371,13 +366,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		07FBB8CE2C958EEF004C0CC7 /* BugItPackage */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = BugItPackage;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 078777BB2C9477D700151D29 /* Project object */;
 }
