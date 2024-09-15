@@ -6,24 +6,29 @@
 //
 
 import SwiftUI
+import BugItPackage
 
 struct ContentView: View {
+    @ObservedObject private var bugItManager = BugItManager.shared
+    
     var body: some View {
         NavigationView {
-            VStack {
-                NavigationLink(destination: 
-                                BugFormView()
-                                    .navigationBarTitle("Bug Form", displayMode: .inline)
-                ) {
+            if bugItManager.shouldShowLogin {
+                LoginButtonView()
+            } else {
+                NavigationLink(destination: BugFormView()
+                    .navigationBarTitle("Bug Form", displayMode: .inline)) {
                     Text("Report a bug")
                 }
                 .buttonStyle(.bordered)
             }
         }
         .tint(.black)
+        .onAppear {
+            bugItManager.checkLoginStatus()
+        }
     }
 }
-
 #Preview {
     ContentView()
 }
