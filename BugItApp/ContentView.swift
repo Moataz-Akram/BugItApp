@@ -24,9 +24,6 @@ struct ContentView: View {
             }
         }
         .tint(.black)
-        .onAppear {
-            bugItManager.checkLoginStatus()
-        }
     }
 }
 #Preview {
